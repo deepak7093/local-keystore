@@ -12,32 +12,42 @@
 ## Usage Instructions
 
 - Clone the repo
+
 `git clone https://github.com/deepak7093/keystore-sample`
 - Switch dir
+
 `cd keystore-sample`
 
 ### Starting Keystore Server with Docker
 - Build docker image
+
 ` docker build -t keystore:v1 . `
 - Start Keystore Server
+
 ` docker run -p 5000:5000 keystore:v1`
 - Check for docker process
+
 ` docker ps`
 
 ### Using client from local
 - Create virtual env
+
 ` python3 -m venv venv; source venv/bin/activate`
 - Install python dependecies
+
 ` pip install -r requirements.txt`
 
 ### Sample CLI commands
 
 - Set Keys
+
 `python keystore-client.py set sea pacific`
+
 `python keystore-client.py set mountain himalaya`
 
 - Get Keys
 `python keystore-client.py get sea`
+
 `python keystore-client.py get mountain`
 
 - Watch 
