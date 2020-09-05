@@ -14,6 +14,7 @@
 Clone the repo
 
 `git clone https://github.com/deepak7093/keystore-sample`
+
 Switch dir
 
 `cd keystore-sample`
@@ -22,9 +23,11 @@ Switch dir
 Build docker image
 
 ` docker build -t keystore:v1 . `
+
 Start Keystore Server
 
 ` docker run -p 5000:5000 keystore:v1`
+
 Check for docker process
 
 ` docker ps`
@@ -33,6 +36,7 @@ Check for docker process
 Create virtual env
 
 ` python3 -m venv venv; source venv/bin/activate`
+
 Install python dependecies
 
 ` pip install -r requirements.txt`
